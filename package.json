@@ -1,0 +1,27 @@
+{
+  "name": "assignment12_employee_tracker",
+  "version": "1.0.0",
+  "description": "SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "migrate": "mysql -u root -p employee_db < db/schema.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samiul1988/assignment12_employee_tracker.git"
+  },
+  "keywords": [],
+  "author": "Samiul Choudhury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samiul1988/assignment12_employee_tracker/issues"
+  },
+  "homepage": "https://github.com/samiul1988/assignment12_employee_tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.0.0",
+    "mysql2": "^2.2.5"
+  }
+}
