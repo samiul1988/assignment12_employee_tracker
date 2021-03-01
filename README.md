@@ -42,7 +42,8 @@ THEN I am prompted to select an employee to update and their new role and this i
     * No test files have been added since there was no specific instruction to add test cases
     * Validation was considered while obtaining user input using Inquirer prompt
     * The query functions were organized in a class called ```Query```
-    * Demo data was inserted using a ```seed.sql``` file  
+    * Demo data was inserted using a ```seed.sql``` file 
+    * Added UNIQUE constraints to the department name, role title and employee (first name + last name) since majority of the selections are based on names  
 
 
 ### Demo Run

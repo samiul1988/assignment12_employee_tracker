@@ -19,6 +19,7 @@ CREATE TABLE roles (
   salary DECIMAL NOT NULL,
   department_id INTEGER UNSIGNED,
   PRIMARY KEY (id),
+  CONSTRAINT uc_title UNIQUE (title),
   CONSTRAINT fk_department FOREIGN KEY (department_id) REFERENCES departments(id) ON DELETE CASCADE
 );
 
@@ -30,6 +31,7 @@ CREATE TABLE employees (
   manager_id INTEGER UNSIGNED,
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id),
+  CONSTRAINT uc_name UNIQUE(first_name, last_name),
   CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES roles(id) ON DELETE CASCADE,
   CONSTRAINT fk_manager FOREIGN KEY (manager_id) REFERENCES employees(id) ON DELETE SET NULL
 );
