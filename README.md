@@ -1,7 +1,7 @@
-## Assignment 12: Employee Tracker
+## Assignment 12: Employee Tracker (CMS)
 ---
 ### Topic
-TDD and OOP (Constructors and Classes)
+MySQL and NodeJS
 
 ### User Story (Obtained from the assignment description)
 
@@ -37,26 +37,16 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 * The project was developed from scratch.
 * Basic considerations were as follows:
-    * To be included  
+    * Following packages were used in the assignment: MySQL2, Inquirer, console.table and dotenv 
+    * The database configuration information was saved in a local .env file
+    * No test files have been added since there was no specific instruction to add test cases
+    * Validation was considered while obtaining user input using Inquirer prompt
+    * The query functions were organized in a class called ```Query```
+    * Demo data was inserted using a ```seed.sql``` file  
 
-### Sample HTML file generated from this application
-[Sample HTML File](./sample/team-profile.html)
-#### Output Screenshot
-![HTML File Output](./assets/images/Sample_assignment10.png)
 
 ### Demo Run
-![Demo Run](./assets/images/Demo_assignment10.gif)
+![Demo Run](./assets/images/assignment12_demo.gif)
 
 ### Link of Walkthrough Video
-The walkthrough video demonstrates the following:
-* all four test suites passing
-    * Due to time limitation, I ran all four tests together using ```npm test```
-    * In the demo run shown in the previous section, I ran individual test as well as full test to show that individual components have also passed
-* how a user would invoke the application from the command line
-* how a user would enter responses to all of the prompts in the application
-* a generated HTML file that matches the user input
-    * when a Github link is clicked, it shows the asssociated github profile in a new tab
-    * when an email is clicked, it opens the default email program and populates the TO field of the email with the address
-
-
-[Click here to see the video](https://drive.google.com/file/d/1IM8kVVlVYrM2cALU0LDn-ewmJCiiwAD9/view)
+[Click here to see the video](https://drive.google.com/file/d/1xRFRwKGhstbyqxfGJwp0Wo2IO9pcFueT/view)
